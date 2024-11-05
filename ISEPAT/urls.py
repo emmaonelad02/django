@@ -21,5 +21,12 @@ from GestionAbsence import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', views.home, name='home'),
+    path('logout/', views.logout_view, name='logout'),
+    path('', views.home, name='home'),
+    path('login/', views.login_view, name='login'),
+    path('etudiants/', views.liste_etudiants, name='liste_etudiants'),
+    path('etudiants/ajouter/', views.ajouter_etudiant, name='ajouter_etudiant'),
+    path('etudiants/<int:etudiant_id>/supprimer/', views.supprimer_etudiant, name='supprimer_etudiant'),
+    path('etudiants/<int:etudiant_id>/ajouter_absence/', views.ajouter_absence, name='ajouter_absence'),
+    path('absences/<int:absence_id>/supprimer/', views.supprimer_absence, name='supprimer_absence'),
 ]

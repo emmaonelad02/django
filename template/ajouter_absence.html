@@ -1,0 +1,22 @@
+{% load static %}
+<!-- admin/ajouter_absence.html -->
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
+    <title>Ajouter Absence</title>
+</head>
+<body>
+<main class="container">
+    <h1 class="my-4">Ajouter une Absence pour {{ etudiant.nom }} {{ etudiant.prenom }}</h1>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-bd-primary">Enregistrer</button>
+        <a href="{% url 'liste_etudiants' %}" class="btn btn-secondary">Annuler</a>
+    </form>
+</main>
+<script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

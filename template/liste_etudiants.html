@@ -1,0 +1,62 @@
+{% load static %}
+<!-- admin/liste_etudiants.html -->
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
+    <title>Gestion des Absences</title>
+
+</head>
+<body>
+<div class="dropdown">
+    <button class="btn btn-bd-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Menu
+    </button>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="{% url 'logout' %}">Se Déconnecter</a></li>
+    </ul>
+</div>
+<main class="container">
+
+    <h1 class="my-4">Gestion des Étudiants et Absences</h1>
+
+    <a href="{% url 'ajouter_etudiant' %}" class="btn btn-bd-primary mb-3">Ajouter un Étudiant</a>
+
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Matricule</th>
+            <th>Absences</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for etudiant in etudiants %}
+            <tr>
+                <td>{{ etudiant.nom }}</td>
+                <td>{{ etudiant.prenom }}</td>
+                <td>{{ etudiant.matricule }}</td>
+                <td>
+                    <ul>
+                        {% for absence in etudiant.absences.all %}
+                            <li>
+                                {{ absence.date_absence }}
+                                <a href="{% url 'supprimer_absence' absence.id %}" class="text-danger">Supprimer</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </td>
+                <td>
+                    <a href="{% url 'ajouter_absence' etudiant.id %}" class="btn btn-outline-primary btn-sm">Ajouter Absence</a>
+                    <a href="{% url 'supprimer_etudiant' etudiant.id %}" class="btn btn-outline-danger btn-sm">Supprimer Étudiant</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</main>
+<script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

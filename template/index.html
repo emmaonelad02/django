@@ -1,7 +1,7 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
   <head>
 
@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <title>Grad School HTML5 Template</title>
+    <title>ISEP-AT</title>
     
     <!-- Bootstrap core CSS -->
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -32,28 +32,28 @@ https://templatemo.com/tm-557-grad-school
 
 <body>
 
-   
+  
   <!--header-->
   <header class="main-header clearfix" role="header">
     <div class="logo">
-      <a href="#"><em>Grad</em> School</a>
+      <a href="#"><em>ISEP-AT</em> De Diamniadio</a>
     </div>
     <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
     <nav id="menu" class="main-nav" role="navigation">
       <ul class="main-menu">
-        <li><a href="#section1">Home</a></li>
-        <li class="has-submenu"><a href="#section2">About Us</a>
+        <li><a href="#section1">Menu</a></li>
+        <li class="has-submenu"><a href="#section2">A propos de nous</a>
           <ul class="sub-menu">
-            <li><a href="#section2">Who we are?</a></li>
-            <li><a href="#section3">What we do?</a></li>
-            <li><a href="#section3">How it works?</a></li>
+            <li><a href="#section2">Qui nous sommes?</a></li>
+            <li><a href="#section3">Ce que nous faisons?</a></li>
+            <li><a href="#section3">Comment cela fonctionne?</a></li>
             <li><a href="https://templatemo.com/about" rel="sponsored" class="external">External URL</a></li>
           </ul>
         </li>
-        <li><a href="#section4">Courses</a></li>
+        <li><a href="#section4">Cours</a></li>
         <!-- <li><a href="#section5">Video</a></li> -->
         <li><a href="#section6">Contact</a></li>
-        <li><a href="https://templatemo.com" class="external">External</a></li>
+        <li><a href="{% url 'login' %}" class="external">Gestion Abscences</a></li>
       </ul>
     </nav>
   </header>
@@ -66,10 +66,10 @@ https://templatemo.com/tm-557-grad-school
 
       <div class="video-overlay header-text">
           <div class="caption">
-              <h6>Graduate School of Management</h6>
-              <h2><em>Your</em> Classroom</h2>
+              <h6>Institut Supérieur d'Enseignement Professionnel Ahmadou Traware de Diamniadio</h6>
+              <h2><em>Votre</em> Salle de classe</h2>
               <div class="main-button">
-                  <div class="scroll-to-section"><a href="#section2">Discover more</a></div>
+                  <div class="scroll-to-section"><a href="#section2">En savoir plus</a></div>
               </div>
           </div>
       </div>
@@ -84,12 +84,12 @@ https://templatemo.com/tm-557-grad-school
           <div class="features-post">
             <div class="features-content">
               <div class="content-show">
-                <h4><i class="fa fa-pencil"></i>All Courses</h4>
+                <h4><i class="fa fa-pencil"></i>Tous les Cours</h4>
               </div>
               <div class="content-hide">
-                <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
-                <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet.</p>
-                <div class="scroll-to-section"><a href="#section2">More Info.</a></div>
+                <p>Prenez soin d’avoir un style fluide, un alignement libre, et une mise en forme simple. Le style fluide est associé à un placement bien calculé. Donnez de l’importance aux éléments essentiels. Restez cohérent dans vos choix, favorisant la clarté et la fluidité.</p>
+                <p class="hidden-sm">ortez votre attention sur un style fluide et aligné, avec des éléments bien placés. Les détails ajoutent une touche raffinée et renforcent la cohérence du design..</p>
+                <div class="scroll-to-section"><a href="#section2">Plus d'Information.</a></div>
             </div>
             </div>
           </div>
@@ -98,12 +98,12 @@ https://templatemo.com/tm-557-grad-school
           <div class="features-post second-features">
             <div class="features-content">
               <div class="content-show">
-                <h4><i class="fa fa-graduation-cap"></i>Virtual Class</h4>
+                <h4><i class="fa fa-graduation-cap"></i>Classe Virtuelle</h4>
               </div>
               <div class="content-hide">
                 <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
                 <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet.</p>
-                <div class="scroll-to-section"><a href="#section3">Details</a></div>
+                <div class="scroll-to-section"><a href="#section3">Détails</a></div>
             </div>
             </div>
           </div>
@@ -131,37 +131,36 @@ https://templatemo.com/tm-557-grad-school
       <div class="row">
         <div class="col-md-12">
           <div class="section-heading">
-            <h2>Why choose Grad School?</h2>
+            <h2>Pourquoi choisir ISEP-AT?</h2>
           </div>
         </div>
         <div class="col-md-12">
           <div id='tabs'>
             <ul>
-              <li><a href='#tabs-1'>Best Education</a></li>
-              <li><a href='#tabs-2'>Top Management</a></li>
+              <li><a href='#tabs-1'>Meilleure Education</a></li>
+              <li><a href='#tabs-2'>Direction Générale</a></li>
               <li><a href='#tabs-3'>Quality Meeting</a></li>
             </ul>
             <section class='tabs-content'>
               <article id='tabs-1'>
                 <div class="row">
                   <div class="col-md-6">
-                    <img src="{% static 'assets/images/choose-us-image-01.png' %}" alt="">
+                    <img src="{% static 'assets/images/image1.jpeg' %}" alt="">
                   </div>
                   <div class="col-md-6">
-                    <h4>Best Education</h4>
-                    <p>Grad School is free educational HTML template with Bootstrap 4.5.2 CSS layout. Feel free to use it for educational or commercial purposes. You may want to make <a href="https://paypal.me/templatemo" target="_parent" rel="sponsored">a little donation</a> to TemplateMo. Please tell your friends about us. Thank you.</p>
+                    <h4>Meilleur Education</h4>
+                    <p>L’Institut Supérieur d'Enseignement Professionnel (ISEP) de Diamniadio est une institution sénégalaise dédiée à la formation technique et professionnelle. Situé dans la ville nouvelle de Diamniadio, cet établissement a pour mission de former des techniciens supérieurs et des professionnels qualifiés, répondant aux besoins spécifiques du marché de l'emploi et aux exigences de l'économie sénégalaise en pleine croissance</p>
                   </div>
                 </div>
               </article>
               <article id='tabs-2'>
                 <div class="row">
                   <div class="col-md-6">
-                    <img src="{% static 'assets/images/choose-us-image-02.png' %}" alt="">
+                    <img src="{% static 'assets/images/image2.jpeg' %}" alt="">
                   </div>
                   <div class="col-md-6">
                     <h4>Top Level</h4>
-                    <p>You can modify this HTML layout by editing contents and adding more pages as you needed. Since this template has options to add dropdown menus, you can put many HTML pages.</p> 
-                    <p>Suspendisse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum quam felis non ante.</p>
+                    <p>L’ISEP de Diamniadio propose des formations professionnalisantes dans des domaines variés, tels que les technologies de l'information, l'industrie, les énergies renouvelables, la gestion, et l'agriculture. Ces programmes sont conçus en étroite collaboration avec les entreprises et les acteurs économiques locaux, afin de garantir une formation adaptée aux réalités du secteur. Les étudiants y acquièrent des compétences techniques et pratiques à travers des cours théoriques, des travaux en laboratoire, et des stages en entreprise..</p>
                   </div>
                 </div>
               </article>
@@ -171,8 +170,8 @@ https://templatemo.com/tm-557-grad-school
                     <img src="{% static 'assets/images/choose-us-image-03.png' %}" alt="">
                   </div>
                   <div class="col-md-6">
-                    <h4>Quality Meeting</h4>
-                    <p>You are NOT allowed to redistribute this template ZIP file on any template collection website. However, you can use this template to convert into a specific theme for any kind of CMS platform such as WordPress. For more information, you shall <a rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact TemplateMo</a> now.</p>
+                    <h4>Les qualités </h4>
+                    <p>L’institut met également l’accent sur l’entrepreneuriat et l’innovation, encourageant ses étudiants à développer des projets concrets et à s'engager dans la création d’entreprises. Grâce à des infrastructures modernes et des ressources pédagogiques adaptées, l’ISEP de Diamniadio s’affirme comme un pilier du développement professionnel au Sénégal, contribuant à réduire le fossé entre la formation académique et les attentes du marché de l'emploi.</p>
                   </div>
                 </div>
               </article>
@@ -189,17 +188,17 @@ https://templatemo.com/tm-557-grad-school
         <div class="col-md-7 col-xs-12">
           <div class="continer centerIt">
             <div>
-              <h4>Take <em>any online course</em> and win $326 for your next class</h4>
+              <h4>Suivez n'importe quel cours en ligne et gagnez 12000cfa pour votre prochain cours</h4>
               <div class="counter">
 
                 <div class="days">
                   <div class="value">00</div>
-                  <span>Days</span>
+                  <span>Jours</span>
                 </div>
 
                 <div class="hours">
                   <div class="value">00</div>
-                  <span>Hours</span>
+                  <span>Heures</span>
                 </div>
 
                 <div class="minutes">
@@ -225,17 +224,17 @@ https://templatemo.com/tm-557-grad-school
               <div class="row">
                 <div class="col-md-12">
                   <fieldset>
-                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Votre Nom" required="">
                   </fieldset>
                 </div>
                 <div class="col-md-12">
                   <fieldset>
-                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+                    <input name="email" type="text" class="form-control" id="email" placeholder="Votre Mail" required="">
                   </fieldset>
                 </div>
                 <div class="col-md-12">
                   <fieldset>
-                    <input name="phone-number" type="text" class="form-control" id="phone-number" placeholder="Your Phone Number" required="">
+                    <input name="phone-number" type="text" class="form-control" id="phone-number" placeholder="Votre Numéro " required="">
                   </fieldset>
                 </div>
                 <div class="col-md-12">
@@ -274,12 +273,12 @@ https://templatemo.com/tm-557-grad-school
             </div>
           </div>
           <div class="item">
-            <img src="{% static 'assets/images/courses-02.jpg' %}" alt="Course #2">
+            <img src="{% static 'assets/images/image2.jpeg' %}" alt="Course #2">
             <div class="down-content">
               <h4>Business World</h4>
               <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
               <div class="author-image">
-                <img src="{% static 'assets/images/author-02.png' %}" alt="Author 2">
+                <img src="{% static 'assets/images/image1.jpeg' %}" alt="Author 2">
               </div>
               <div class="text-button-free">
                 <a href="#">Free <i class="fa fa-angle-double-right"></i></a>
@@ -287,12 +286,12 @@ https://templatemo.com/tm-557-grad-school
             </div>
           </div>
           <div class="item">
-            <img src="{% static 'assets/images/courses-03.jpg' %}" alt="Course #3">
+            <img src="{% static 'assets/images/image3.jpeg' %}" alt="Course #3">
             <div class="down-content">
               <h4>Media Technology</h4>
               <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
               <div class="author-image">
-                <img src="{% static 'assets/images/author-03.png' %}" alt="Author 3">
+                <img src="{% static 'assets/images/image4.jpeg' %}" alt="Author 3">
               </div>
               <div class="text-button-pay">
                 <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
@@ -300,7 +299,7 @@ https://templatemo.com/tm-557-grad-school
             </div>
           </div>
           <div class="item">
-            <img src="{% static 'assets/images/courses-04.jpg' %}" alt="Course #4">
+            <img src="{% static 'assets/images/image1.jpeg' %}" alt="Course #4">
             <div class="down-content">
               <h4>Communications</h4>
               <p>Download free images and videos for your websites by visiting Unsplash, Pixabay, and Pexels.</p>
@@ -313,12 +312,12 @@ https://templatemo.com/tm-557-grad-school
             </div>
           </div>
           <div class="item">
-            <img src="{% static 'assets/images/courses-05.jpg' %}" alt="">
+            <img src="{% static 'assets/images/image5.jpeg' %}" alt="">
             <div class="down-content">
               <h4>Business Ethics</h4>
               <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
               <div class="author-image">
-                <img src="{% static 'assets/images/author-05.png' %}" alt="">
+                <img src="{% static 'assets/images/image6.jpeg' %}" alt="">
               </div>
               <div class="text-button-pay">
                 <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
@@ -326,12 +325,12 @@ https://templatemo.com/tm-557-grad-school
             </div>
           </div>
           <div class="item">
-            <img src="{% static 'assets/images/courses-01.jpg' %}" alt="">
+            <img src="{% static 'assets/images/image1.jpeg' %}" alt="">
             <div class="down-content">
               <h4>Photography</h4>
               <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
               <div class="author-image">
-                <img src="{% static 'assets/images/author-01.png' %}" alt="">
+                <img src="{% static 'assets/images/image3.jpeg' %}" alt="">
               </div>
               <div class="text-button-free">
                 <a href="#">Free <i class="fa fa-angle-double-right"></i></a>
@@ -339,12 +338,12 @@ https://templatemo.com/tm-557-grad-school
             </div>
           </div>
           <div class="item">
-            <img src="{% static 'assets/images/courses-02.jpg' %}" alt="">
+            <img src="{% static 'assets/images/image6.jpeg' %}" alt="">
             <div class="down-content">
               <h4>Web Development</h4>
               <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
               <div class="author-image">
-                <img src="{% static 'assets/images/author-02.png' %}" alt="">
+                <img src="{% static 'assets/images/image8.jpeg' %}" alt="">
               </div>
               <div class="text-button-free">
                 <a href="#">Free <i class="fa fa-angle-double-right"></i></a>
@@ -352,12 +351,12 @@ https://templatemo.com/tm-557-grad-school
             </div>
           </div>
           <div class="item">
-            <img src="{% static 'assets/images/courses-03.jpg' %}" alt="">
+            <img src="{% static 'assets/images/image3.jpeg' %}" alt="">
             <div class="down-content">
               <h4>Learn HTML CSS</h4>
               <p>You can get free images and videos for your websites by visiting Unsplash, Pixabay, and Pexels.</p>
               <div class="author-image">
-                <img src="{% static 'assets/images/author-03.png' %}" alt="">
+                <img src="{% static 'assets/images/image1.jpeg' %}" alt="">
               </div>
               <div class="text-button-pay">
                 <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
@@ -365,12 +364,12 @@ https://templatemo.com/tm-557-grad-school
             </div>
           </div>
           <div class="item">
-            <img src="{% static 'assets/images/courses-04.jpg' %}" alt="">
+            <img src="{% static 'assets/images/image6.jpeg' %}" alt="">
             <div class="down-content">
               <h4>Social Media</h4>
               <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
               <div class="author-image">
-                <img src="{% static 'assets/images/author-04.png' %}" alt="">
+                <img src="{% static 'assets/images/image4.jpeg' %}" alt="">
               </div>
               <div class="text-button-pay">
                 <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
@@ -378,12 +377,12 @@ https://templatemo.com/tm-557-grad-school
             </div>
           </div>
           <div class="item">
-            <img src="{% static 'assets/images/courses-05.jpg' %}" alt="">
+            <img src="{% static 'assets/images/image1.jpeg' %}" alt="">
             <div class="down-content">
               <h4>Digital Arts</h4>
               <p>Quisque cursus augue ut velit dictum, quis volutpat enim blandit. Maecenas a lectus ac ipsum porta.</p>
               <div class="author-image">
-                <img src="{% static 'assets/images/author-05.png' %}" alt="">
+                <img src="{% static 'assets/images/image6.jpeg' %}" alt="">
               </div>
               <div class="text-button-free">
                 <a href="#">Free <i class="fa fa-angle-double-right"></i></a>
@@ -391,12 +390,12 @@ https://templatemo.com/tm-557-grad-school
             </div>
           </div>
           <div class="item">
-            <img src="{% static 'assets/images/courses-01.jpg' %}" alt="">
+            <img src="{% static 'assets/images/image4.jpeg' %}" alt="">
             <div class="down-content">
               <h4>Media Streaming</h4>
               <p>Pellentesque ultricies diam magna, auctor cursus lectus pretium nec. Maecenas finibus lobortis enim.</p>
               <div class="author-image">
-                <img src="{% static 'assets/images/author-01.png' %}" alt="">
+                <img src="{% static 'assets/images/image4.jpeg' %}" alt="">
               </div>
               <div class="text-button-pay">
                 <a href="#">Pay <i class="fa fa-angle-double-right"></i></a>
